@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css?family=Khula&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 40px;
+  width: 100%;
+  background-color: grey;
+  height: 100vh;
+  overflow: hidden;
+  font-family: "Khula", sans-serif;
+}
+
+.title{
+  color: white;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.board {
+  width: 400px;
+  height: 400px;
+  display: grid;
+}
+
+.block {
+  display: grid;
+  width: 20px;
+  height: 20px;
+  border: 1px solid grey;
+  cursor: pointer;
+}
+
+.block.true {
+  cursor: auto;
+}
+
+.dead {
+  background-color: white;
+}
+
+.alive {
+  background-color: black;
+}
+
+.startBtn {
+  margin-top: 20px;
+  align-self: center;
+  padding: 10px 20px;
+  background-color: rgb(178, 40, 40);
+  color: white;
+  border-radius: 20px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.startBtn.second {
+  position: absolute;
+  bottom: 7%;
+}
+
+input {
+  width: 300px;
+  text-align: center;
+  border-radius: 20px;
+  margin-top: 20px;
+  padding: 10px 0;
+  outline: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.screen { 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  transition: margin 0.5s ease-out;
+  background: linear-gradient(90deg, #29323c 0%, #485563 100%);
+}
+
+.screen.second {
+  position: relative;
+}
+
+.screen.up {
+  margin-top: -100vh;
+}
